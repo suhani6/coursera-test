@@ -1,0 +1,65 @@
+<style>
+* {
+	box-sizing: border-box;
+}
+h1{
+	text-align: center;
+}
+.row section ,span{
+border: 2px solid black;
+}
+section {
+	background-color: grey;
+	padding: 5px;
+	 margin: 0 10px 20px 10px;
+	 display: inline-block;
+}
+
+
+.box1 span {
+	background-color: rosybrown;
+	border-top: none;
+	border-right: none;
+}
+.box2 span {
+	background-color: indianred;
+	border-top: none;
+	border-right: none;
+}
+}
+.box3 span {
+	background-color: #e5d198;
+	border-top: none;
+	border-right: none;
+}
+section{
+	position: relative;
+}
+span{
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-align: center;
+	width: 145px;
+    text-transform: capitalize;
+}
+p{
+	margin-top: 30px;
+}
+@media (min-width: 992px) {
+	.box1 , .box2 , .box3 {
+		float: left;
+		width: 32%;
+		padding: 5px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.box1, .box2 {
+		float: left;
+		width: 50%;
+	}
+	.box3 {
+		float: left;
+		width: 100%;
+	}
+}
